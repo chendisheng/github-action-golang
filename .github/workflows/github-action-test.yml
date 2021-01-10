@@ -21,9 +21,9 @@ jobs:
     steps:
       # install go
       - name: Install Go
-          uses: actions/setup-go@v2
-          with:
-            go-version: ${{ matrix.go-version }}
+        uses: actions/setup-go@v2
+        with:
+          go-version: ${{ matrix.go-version }}
 
       # Checks out a copy of your repository on the ubuntu-latest machine
       - name: Checkout code
