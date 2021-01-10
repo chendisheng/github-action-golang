@@ -8,7 +8,7 @@ jobs:
   # when a job name is not provided
   github-action-test:
     # Name the Job
-    name: Github action flow test demo
+    name: Github action flow test
 
     strategy:
       matrix:
