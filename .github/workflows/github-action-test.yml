@@ -31,7 +31,7 @@ jobs:
 
       # Runs the Super-Linter action
       - name: Test
-        run: go test ./actions
+        run: go test -v ./...
 
         env:
           DEFAULT_BRANCH: main
