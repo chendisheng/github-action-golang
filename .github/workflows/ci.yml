@@ -36,12 +36,12 @@ jobs:
           key: ${{ runner.os }}-go-${{ hashFiles('**/go.sum') }}
           restore-keys: |
             ${{ runner.os }}-go-
-      - name: Make Lint
-        run: |
-          export GOPATH=$HOME/go
-          export PATH=$PATH:$GOPATH/bin
-          curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin v1.31.0
-          make lint
+#      - name: Make Lint
+#        run: |
+#          export GOPATH=$HOME/go
+#          export PATH=$PATH:$GOPATH/bin
+#          curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin v1.31.0
+#          make lint
       - name: Run Unit tests
         run: |
           make test
